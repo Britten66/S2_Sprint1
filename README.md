@@ -27,7 +27,7 @@ shared/
 |
 |
 └─ by Date
-├─ Oct 20 → Repo + Skeleton + Folder Tree ready
+├─ Oct 20 → Repo + Branch + Skeleton + Folder Tree ready
 ├─ Oct 22 → HTML structure complete
 ├─ Oct 24 → Figma/CSS implemented
 ├─ Oct 27 → JS validation functional
