@@ -17,3 +17,18 @@ This project was developed during Sprint 1 (Winter 2025) as part of the Software
 
 Our goal was to build a clean, responsive multi-page website using HTML, CSS, and JavaScript.
 The focus was on creating a visually appealing layout, adding interactivity through JavaScript, and ensuring the site works smoothly across different devices.
+
+ex here.
+
+shared/
+├─ variables.css ← colors, fonts, spacing
+├─ layout.css ← grid and container rules
+└─ utils.js ← helper functions
+|
+|
+└─ by Date
+├─ Oct 20 → Repo + Skeleton + Folder Tree ready
+├─ Oct 22 → HTML structure complete
+├─ Oct 24 → Figma/CSS implemented
+├─ Oct 27 → JS validation functional
+└─ Oct 30 → Final QA + submission
