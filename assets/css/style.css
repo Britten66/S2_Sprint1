@@ -8,4 +8,29 @@
    =========================== */
 
 /* imports here */
-@import "./../shared/layout.css";
+
+html, body{height: 100%;}
+body{
+   background-color: rgba(37, 30, 30, 0.459);
+   display: flex;
+   flex-direction: column;
+}
+
+main{flex: 1 0 auto;} /* filling all space */
+footer{margin-top: auto;}
+
+
+.nav-link.active,
+.nav-pills .nav-link.active,
+.navbar-nav .nav-link.active {
+   color: aliceblue;
+   background-color: #0f4d86;
+   font-size: large;
+}
+
+
+.nav-pills .nav-link:hover{
+   color: aliceblue;
+}
+
+
