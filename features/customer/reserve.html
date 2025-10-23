@@ -172,6 +172,23 @@
     <div class="p-4 bg-light rounded shadow-sm h-100">
       <i class="bi bi-geo-alt fs-1 text-primary mb-3"></i>
       <h5>Indoor/Outdoor</h5>
+      <br>
+       <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Indoor ( available )</label>
+  </div>
+  <br>
+   <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Outdoor ( available )</label>
+  </div>
+  <br>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+    <label class="form-check-label" for="exampleCheck1">Lounge ( unavailable )</label>
+  </div>
+  <br>
+  <strong><p> Lounge is Closed  For Rennovations</p></strong>
      </div>
     </div>
 
@@ -209,6 +226,27 @@
   <input type="text" aria-label="First name" class="form-control" placeholder="first name">
   <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
 </div> -->
+
+
+ 
+<form>
+  <div class="form-group">
+
+    <label for="customerName">Full Name</label>
+
+    <input type="text" class="form-control" id="customerName" placeholder="Enter Your Name Here">
+  </div>
+
+<br>
+  <div class="form-group">
+
+    <label for="customerPhone">Phone Number</label> <!-- add validator for this -->
+    
+    <input type="number" class="form-control" id="customerPhone" placeholder="Enter Your Phone Number Here">
+  </div>
+ <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
     </main>
 
     <footer></footer>

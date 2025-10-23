@@ -20,7 +20,7 @@
     letter-spacing: 50px;
     padding-top: 15px;
     font-weight: bold;
-  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
 
@@ -28,4 +28,19 @@
     color: whitesmoke !important;
     font-style: italic;
 
+}
+
+/* /// slider image  */
+
+d-block{
+    position: relative;
+
+}
+
+#foodSlider img{
+    border-radius: 15px;
+}
+
+.carousel-item{
+   
 }
