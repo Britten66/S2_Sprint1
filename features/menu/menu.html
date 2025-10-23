@@ -4,29 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet"/>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
 
     <!-- stylings -->
 
-    <link rel="stylesheet" href="/assets/css/style.css" >
-
-
-
-
-   
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/menu.css" />
   </head>
 
-
   <body>
-
     <!-- =========================================
       Sprint 1 | Semester 2
       Authors: Justin Seaward, Matt Reid, Christopher Britten
       Date Created: October 19th, 2025
       Due Date: October 31, 2025
-         ========================================== -->
+        ========================================== -->
 
     <header></header>
 
@@ -34,15 +33,626 @@
   =============== Main Here ============
   =================================== -->
 
-    <main class="container py-4">
-      <h1>Sprint 1 Semester 2</h1>
-      <p>theres some more text on this page to show that its different</p>
+    <main class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h4>Breakfast Time!</h4>
+          </div>
+        </div>
+        <!-- Breakfast Section -->
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/avotoastegg.jpg" alt="avotoastegg" />
+            <h5>Avocado Toast With Egg</h5>
+            <p>Our popular avocado toast top with one or two eggs.</p>
+            <p>$8.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="avotoastegg"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/pastry3.jpg" alt="pastery3" />
+            <h5>Croissant</h5>
+            <p>
+              Flaky, buttery pastry, great paired with our fresh ground coffee.
+            </p>
+            <p>$6.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="croissant"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/yogurt.jpg" alt="yogurt" />
+            <h5>Yogurt Parfait</h5>
+            <p>With fresh picked blueberries, granola and yogurt.</p>
+            <p>$6.99</p>
+            <button type="button" class="btn btn-outline-primary" id="yogurt">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/omelet.jpg" alt="omelet" />
+            <h5>Omelet</h5>
+            <p>
+              Three beaten eggs, fried in butter, with veggies, meat and cheese.
+              Two pieces of toast.
+            </p>
+            <p>$11.99</p>
+            <button type="button" class="btn btn-outline-primary" id="omelet">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/pancakes.jpg" alt="pancakes" />
+            <h5>Stack of Pancakes</h5>
+            <p>
+              Ten homemade pancakes, drizzled in AA canadian maple syrup,
+              butter, with a side of fruit.
+            </p>
+            <p>$14.99</p>
+            <button type="button" class="btn btn-outline-primary" id="pancakes">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <h5>Start of the Day</h5>
+            <br />
+            <p>One Egg w/ One Toast...........................$4.99</p>
+            <!-- <button id="mediumroast">Add</button> -->
+            <p>Two Eggs w/ Two Toast.........................$8.99</p>
+            <!-- <button id="darkroast">Add</button> -->
+            <p>Three Eggs w/ Three Toast...................$12.49</p>
+            <!-- <button id="speccoffee">Add</button> -->
+            <p>Pouched Egg w/ Toast..........................$4.99</p>
+            <!-- <button id="steeptea">Add</button> -->
+            <p>Yogurt w/ Strawberries..........................$6.99</p>
+            <!-- <button id="greentea">Add</button> -->
+            <p>Otemeal w/ Fruit....................................$4.99</p>
+            <!-- <button id="earlgraytea">Add</button> -->
+            <p>Two French Toast w/ Fruit.....................$6.99</p>
+            <!-- <button id="spectea">Add</button> -->
+            <p>Three Pancakes w/ Fruit........................$5.99</p>
+            <!-- <button id="lightroast">Add</button> -->
+          </div>
+        </div>
+
+        <!-- Lunch section -->
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h4>Lunch Time!</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/burger.jpg" alt="burger" />
+            <h5>Double Cheese Burger</h5>
+            <p>
+              Our famous double pattie burger, topped with bacon, two slices of
+              cheese, pickles, fried onions and our homemade burger sauce.
+            </p>
+            <p>$9.99</p>
+            <button type="button" class="btn btn-outline-primary" id="burger">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/subsandwich.jpg" alt="subsandwich" />
+            <h5>Veggie Sub</h5>
+            <p>
+              Our homemade bread filled with romaine lettus, cherry tomatoes,
+              cucumber, sweet onion, and fresh mozzarella.
+            </p>
+            <p>$6.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="subsandwich"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/sandwichsalad.jpg" alt="sandwichsalad" />
+            <h5>Sandwitch & Salad</h5>
+            <p>
+              Sandwich with sweet potatoes, scrambled egg, and leafy greens,
+              with a side of lettuce, sliced tomatoes, cucumbers, and shredded
+              carrots.
+            </p>
+            <p>$8.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="sandwichsalad"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/salad.jpg" alt="salad" />
+            <h5>Garden Salad</h5>
+            <p>
+              Sliced avocado, bright red tomotes, yam, red cabbage, romaine
+              lettuce, a bit of everything from the garden.
+            </p>
+            <p>$12.99</p>
+            <button type="button" class="btn btn-outline-primary" id="salad">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/burger2.jpg" alt="burger2" />
+            <h5>Simple hamburger</h5>
+            <p>
+              A plain hamburger, single pattie, with a side of summer salad.
+            </p>
+            <p>$9.99</p>
+            <button type="button" class="btn btn-outline-primary" id="burger2">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <h5>More Eats</h5>
+            <br />
+            <p>Soup of the Day...............................$4.99</p>
+            <!-- <button id="soup">Add</button> -->
+            <p>Soup w/ grilled cheese.....................$8.99</p>
+            <!-- <button id="soupgrilled">Add</button> -->
+            <p>Grilled Cheese..................................$3.99</p>
+            <!-- <button id="grilled">Add</button> -->
+            <p>Chicken Fingers................................$7.99</p>
+            <!-- <button id="fingers">Add</button> -->
+            <p>Chichen Fingers w/ fries..................$11.99</p>
+            <!-- <button id="fingerfries">Add</button> -->
+            <p>Hot Dog............................................$2.99</p>
+            <!-- <button id="hotdog">Add</button> -->
+            <p>Hot Dog w/ Fries..............................$6.99</p>
+            <!-- <button id="hotfries">Add</button> -->
+            <p>Chill Dog...........................................$3.99</p>
+            <!-- <button id="chilldog">Add</button> -->
+          </div>
+        </div>
+
+        <!-- Appetizera section -->
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h4>Appetizers to start?</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/dipchips.jpg" alt="dipchips" />
+            <h5>Spinach Dip</h5>
+            <p>
+              Four differet types of cheese, fresh spinach, artichokes hearts,
+              sour cream, mayonnaise, salt and peper with cheery chips on the
+              side.
+            </p>
+            <p>$8.99</p>
+            <button type="button" class="btn btn-outline-primary" id="dip">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/wings.jpg" alt="wings" />
+            <h5>Zinger Wings</h5>
+            <p>
+              Delicious maranated chicken wings cooked in a chrispy batter and
+              covered in in-house made zinger sauce.
+            </p>
+            <p>$5.99</p>
+            <button type="button" class="btn btn-outline-primary" id="wings">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <h5>Other Apps</h5>
+            <br />
+            <p>Onion Rings...............................$5.99</p>
+            <!-- <button id="onion">Add</button> -->
+            <p>Squid Rings...............................$9.99</p>
+            <!-- <button id="squid">Add</button> -->
+            <p>Blooming Onion........................$5.99</p>
+            <!-- <button id="blonion">Add</button> -->
+            <p>Pickle Chips..............................$4.99</p>
+            <!-- <button id="picklechip">Add</button> -->
+            <p>Cherry Chips.............................$2.99</p>
+            <!-- <button id="cherrychip">Add</button> -->
+            <p>Salsa.........................................$3.99</p>
+            <!-- <button id="salsa">Add</button> -->
+            <p>Wedge Fries..............................$3.99</p>
+            <!-- <button id="wedge">Add</button> -->
+            <p>Taco Salad................................$5.99</p>
+            <!-- <button id="tacosalad">Add</button> -->
+          </div>
+        </div>
+
+        <!-- Dinner/Main course section -->
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h4>Main Course</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/pasta2.jpg" alt="spaghetti" />
+            <h5>Spaghetti</h5>
+            <p>
+              Our homemade pasta paired with fresh tomato sauce, topped with
+              cherry tomatoes, fresh basil and mozzarella cheese.
+            </p>
+            <p>$15.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="spaghetti"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/shrimp.jpg" alt="shrimp" />
+            <h5>Shrimp Gumbo w/ Rice</h5>
+            <p>
+              Perfect cooked shrimp, on a bed on rice, celery onions, green bell
+              peppers and seasoned with cajun spices.
+            </p>
+            <p>$15.99</p>
+            <button type="button" class="btn btn-outline-primary" id="shrimp">
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/stake.jpg" alt="stake" />
+            <h5>Top Loin Steak</h5>
+            <p>
+              With it robust beefy flavor and tenderness this steak is the
+              perfect dinner meal.
+            </p>
+            <p>$15.99</p>
+            <button type="button" class="btn btn-outline-primary" id="stake">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/pasta3.jpg" alt="" />
+            <h5>Lasagna</h5>
+            <p>
+              Four layers of lean ground meat, ricotta cheese, mozzarella
+              cheese, parmesan cheese with a side of vegetables.
+            </p>
+            <p>$15.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="spaghetti"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/shrimp.jpg" alt="shrimp" />
+            <h5>Shrimp Gumbo w/ Rice</h5>
+            <p>
+              Perfect cooked shrimp, on a bed on rice, celery onions, green bell
+              peppers and seasoned with cajun spices.
+            </p>
+            <p>$15.99</p>
+            <button type="button" class="btn btn-outline-primary" id="shrimp">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="col bg-white border border-black">
+            <h5>Other Favorites</h5>
+            <br />
+            <p>Shrimp Alfredo...............................$14.99</p>
+            <!-- <button id="alfredo">Add</button> -->
+            <p>Caprese Chicken............................$14.99</p>
+            <!-- <button id="caprese">Add</button> -->
+            <p>Mac and Cheese.............................$13.99</p>
+            <!-- <button id="chilemac">Add</button> -->
+            <p>Veggie Fajitas..................................$11.99</p>
+            <!-- <button id="fajitas">Add</button> -->
+            <p>Lemon Herb Chicken......................$14.99</p>
+            <!-- <button id="lemonherb">Add</button> -->
+            <p>Spicy Salmon w/ Rice......................$16.99</p>
+            <!-- <button id="ricebowl">Add</button> -->
+            <p>Chicken Teriyaki..............................$14.99</p>
+            <!-- <button id="hotfries">Add</button> -->
+            <p>Cajun Chicken Pasta.......................$13.99</p>
+            <!-- <button id="chilldog">Add</button> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h4>Get your drink on!</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/specicoffee.jpg" alt="specicoffee" />
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/randomdrinks.jpg" alt="randomdrinks" />
+          </div>
+          <div class="col bg-white border border-black">
+            <img src="/assets/images/beer.jpg" alt="beer" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-white border border-black">
+            <h5>Morning Brews</h5>
+            <br />
+            <p>Light Roast..........................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="lightroast"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Medium Roast.....................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="mediumroast"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Dark Roast...........................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="darkroast"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Spicealtly Coffee................$2.49</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="speccoffee"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Steep Tea............................$1.49</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="steeptea"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Green Tea............................$1.79</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="greentea"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Earl Gray Tea.......................$1.79</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="earlgraytea"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Spicealtly Tea.....................$2.29</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="spectea"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <h5>Thrist Quenchers</h5>
+            <br />
+            <p>Water..................................$0.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="water"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Pepsi..................................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="pepis"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>7 UP...................................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="7up"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Coke...................................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="coke"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Coke Zero..........................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="cokezero"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Apple Juice........................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="apple"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Orange Juice......................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="orange"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+            <p>Gaderade............................$1.99</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="gaderade"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Add
+            </button>
+          </div>
+          <div class="col bg-white border border-black">
+            <h5>19+ Drinks</h5>
+            <br />
+            <p><i>Not avaliable for delivery.</i></p>
+            <br />
+            <p>Domestic Beer.........................$4.99</p>
+            <!-- <button id="dombeer">Add</button> -->
+            <p>Imported Beer.........................$5.99</p>
+            <!-- <button id="importbeer">Add</button> -->
+            <p>Domestic Wine........................$5.99</p>
+            <!-- <button id="domwine">Add</button> -->
+            <p>Imported Wine........................$6.99</p>
+            <!-- <button id="importwine">Add</button> -->
+            <p>Coolers....................................$4.99</p>
+            <!-- <button id="coolers">Add</button> -->
+            <p>Dark Rum................................$3.99</p>
+            <!-- <button id="darkrum">Add</button> -->
+            <p>Spice Rum...............................$3.99</p>
+            <!-- <button id="spicerum">Add</button> -->
+            <p>Whiskey...................................$3.99</p>
+            <!-- <button id="whiskey">Add</button> -->
+            <br />
+            <p><i>Must be at least 19 years of age to purchase.</i></p>
+            <br />
+            <p><i>Proof of age necessary upon request.</i></p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
     <!-- here is the boostrap js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/script.js"></script> <!-- main loader -->
-  <script src="/assets/js/utils.js"></script>  <!-- utility -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <!-- main loader -->
+    <script src="/assets/js/utils.js"></script>
+    <!-- utility -->
   </body>
 </html>
