@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" >
     <link rel="stylesheet" href="/features/customer/reserve.css" >
-    <link rel="stylesheet" href="/assets/css/variables.css" >
+   
 
   </head>
  
@@ -36,14 +36,15 @@
 
     <header></header>
 
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="/videos/kitchen.mp4" type="video/mp4">
+    </video>
     <!-- ===================================
                  Main Here
   =================================== -->
 
-    <main class="container py-4">
-      <h1>Sprint 1 Semester 2</h1>
-      <p>theres some more text on this page to show that its different</p>
-
+    <main class="container py-5">
+     
         <!-- ============================= -->
        <!-- RESERVE A TABLE SECTION HERE  -->
         <!-- ============================= -->
@@ -53,14 +54,14 @@
             <!-- info here -->
     <!-- ============================= -->
 <div class="container text-center py-5">
-  <h2 class="mb-4">Reserve Your Table</h2>
+  <h2 class="table mb-6">Reserve Your Table</h2>
 
   <!-- ============================= -->
   <!-- muted text for the entry prompt -->
    <!-- ============================= -->
 
 
-  <p class="mb-5 text-muted">
+  <p class="text-muted mb-5">
     Book a Day/Time For Your Dining Experience 
   </p>
 
@@ -121,6 +122,48 @@
     <div class="p-4 bg-light rounded shadow-sm h-100">
       <i class="bi bi-people fs-1 text-primary mb-3"></i>
       <h5>Select # of Guest's</h5>
+        <div class="form-group">
+    <label for="formControlSelect">Guests</label>
+    <select class="form-control" id="formControlSelect">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    <br>
+  </div>
+  <h5>Select Timeslot</h5>
+  
+
+
+
+<div class="form-group">
+    <label for="formControlSelect">Reservation Time</label>
+    <select class="form-control" id="formControlSelect">
+      <option>4:30pm</option>
+      <option>5:30pm</option>
+      <option>6:30pm</option>
+      <option>7:30pm</option>
+      <option>8:30pm</option>
+    </select>
+    <br>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
      </div>
     </div>
 
@@ -149,7 +192,7 @@
 <!-- ============================= -->
 
 
-     <div class="input-group py-1">
+     <!-- <div class="input-group py-1">
   <span class="input-group-text">Guest 1</span>
   <input type="text" aria-label="First name" class="form-control" placeholder="first name">
   <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
@@ -165,7 +208,7 @@
   <span class="input-group-text">Guest 3</span>
   <input type="text" aria-label="First name" class="form-control" placeholder="first name">
   <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
-</div>
+</div> -->
     </main>
 
     <footer></footer>
