@@ -30,3 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // loads footer here
   await loadShared("footer", "footer.html");
 });
+
+// Testimonial section
+
