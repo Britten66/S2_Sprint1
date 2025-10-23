@@ -33,11 +33,8 @@ footer{margin-top: auto;}
    color: aliceblue;
 }
 
-img{
-   width: 150px;
-   height: 200px;
-   object-fit: cover;
-}
+
+
 h1 img{
    width:100px;
    height:100px;
@@ -54,10 +51,7 @@ h1 img{
 }
 
 
-.row2{}
 
-
-.row3{}
 
 /* Testimonial */
 

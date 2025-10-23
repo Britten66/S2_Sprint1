@@ -1,0 +1,46 @@
+
+/* for order page  */
+
+.order-page {
+    position: relative;
+ overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.table{
+    color: whitesmoke;
+    letter-spacing: 50px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+.text-muted{
+    color: whitesmoke !important;
+    font-style: italic;
+
+}
+
+/* /// slider image  */
+
+d-block{
+    position: relative;
+
+}
+
+#foodSlider img{
+    border-radius: 15px;
+}
+
+.carousel-item{
+   
+}
