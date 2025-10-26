@@ -33,3 +33,41 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Testimonial section
 
+// Wait for DOM to be fully loaded before attaching event listeners
+document.addEventListener('DOMContentLoaded', function() {
+  const commentForm = document.getElementById('comment-form');
+  
+  if (commentForm) {
+    commentForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const author = document.getElementById('comment-author').value;
+      const commentText = document.getElementById('comment-text').value;
+      
+      if (!author || !commentText) {
+        alert('Please fill in both name and comment fields');
+        return;
+      }
+
+      // Create new comment element
+      const commentsDisplay = document.getElementById('comments-display');
+      const newCommentDiv = document.createElement('div');
+      newCommentDiv.classList.add('test'); // Using the same styling as testimonials
+      
+      // Create the comment HTML structure
+      newCommentDiv.innerHTML = `
+        <blockquote>
+          <p>"${commentText}"</p>
+          <p id="name">- ${author}</p>
+        </blockquote>
+      `;
+      
+      // Add the new comment to the display area
+      commentsDisplay.appendChild(newCommentDiv);
+
+      // Clear the form
+      commentForm.reset();
+    });
+  }
+});
+
