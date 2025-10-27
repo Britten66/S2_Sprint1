@@ -16,7 +16,8 @@
     <!-- stylings -->
 
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="/assets/css/menu.css" /> -->
+    <link rel="stylesheet" href="/assets/css/menu.css" />
+      <link rel="stylesheet" href="/assets/css/variables.css" />
   </head>
 
   <body>
@@ -32,6 +33,7 @@
     <video autoplay muted loop playsinline id="bg-video-menu">
       <source src="/videos/salmon.mp4" type="video/mp4" />
     </video>
+
     <!-- ===================================
   =============== Main Here ============
   =================================== -->
@@ -1204,7 +1206,9 @@
     </main>
 
     <footer></footer>
+<script src="/assets/js/menu-data.js"></script>
     <!-- here is the boostrap js -->
+
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -1214,6 +1218,153 @@
     <!-- main loader -->
     <script src="/assets/js/utils.js"></script>
     <!-- utility -->
+
+
+
+
+
+   <!-- =========================== putting this out of the way as to not consfuse anything =========================== -->
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu data MUST load first -->
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu data MUST load first -->
+<script src="/assets/js/menu-data.js"></script>
+
+<!-- =========================== -->
+    <!-- Cart functionality -->
+<!-- =========================== -->
+
+
+<script>
+  // comments will need to be added as "//"
+  //console.log will be for debugging
+console.log('Starting cart setup...');
+//waiting for the browser to load here
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Page loaded');
+  
+
+  //this validation will check to see if menu item exist, if not it will throw error
+  if (typeof menuItems === 'undefined') {
+    console.error('ERROR: menuItems not found!');
+    alert('Error: Menu data failed to load');
+    return;
+  }
+  
+  console.log('menuItems available');
+  //this selecotr was created to detect button id's
+  //this part is important for the cross page functionality 
+  const buttons = document.querySelectorAll('button[id]');
+  console.log('Found', buttons.length, 'buttons');
+  //looping starts here and adds an event listener to each button on the menu page
+  buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      // we learned this is class its to prevent the browsers default state 
+      e.preventDefault();
+      
+
+      // this fetches the button attributed ID + makes it an item which will hopefully be the correct menu item
+      const itemId = this.id;
+      console.log('Button clicked:', itemId);
+      
+      const item = menuItems[itemId];
+      
+      // validation for if not item here 
+      if (!item) {
+        console.error('Item not found:', itemId);
+        alert('Item not found: ' + itemId);
+        return;
+      }
+      
+      console.log('Found item:', item);
+      
+
+      // starting with an empty cart "[]"
+      let cart = [];
+
+      // try catch is used for loading the selected item(s) from the locval storage and inpolemting them int othe cart
+      try {
+        const cartData = localStorage.getItem('cart');
+        cart = cartData ? JSON.parse(cartData) : [];
+        console.log('Current cart:', cart);
+      } catch (e) {
+        console.error('Error reading cart:', e);
+        cart = [];
+      }
+      // This is a validation to see if the item is already in the cart 
+      //The findIndex I found online and it  is suppose to return item position ( -1 if not found ) 
+      const existingIndex = cart.findIndex(cartItem => cartItem.id === itemId);
+      
+
+      // if the item already is in existence inside the cart
+      // this statement will increarse the item qty +1 
+      if (existingIndex > -1) {
+        cart[existingIndex].quantity += 1;
+        console.log('Increased quantity');
+      } else {
+        // this push is only if there is no item detected
+        // it will only display one item if so
+        cart.push({
+          id: itemId,
+          name: item.name,
+          price: item.price,
+          quantity: 1
+        });
+        console.log('Added new item');
+      }
+      
+      // learning about local storage 
+      // and how it is accessed 
+      // this will try and save the updated cart back to local storage 
+      try {
+        // converitng the cart array to Json string.. then it saves it 
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log('Saved to localStorage');
+        console.log('New cart:', cart);
+        
+        // set up " verify" which makes sure the data was correctkly saved
+        const verify = localStorage.getItem('cart');
+        console.log('Verification:', verify);
+        
+
+        //alert will display message upon saving awhen it is confirmed 
+        alert(item.name + ' added to cart!');
+        
+        // confusing but this originalText will take the 
+        const originalText = this.textContent;
+        this.textContent = 'Added!';
+        this.disabled = true;
+        
+        setTimeout(() => {
+          this.textContent = originalText;
+          this.disabled = false;
+        }, 1000);
+        
+      } catch (e) {
+        console.error('Error saving to localStorage:', e);
+        alert('Error saving to cart. Please try again.');
+      }
+    });
+  });
+  
+  console.log('Cart setup complete');
+});
+</script>
+
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/utils.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
     <script src="/features/menu/menu.js"></script>
   </body>
 </html>

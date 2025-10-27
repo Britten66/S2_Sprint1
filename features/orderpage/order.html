@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" >
     <link rel="stylesheet" href="/assets/css/variables.css" >
+    <link rel="stylesheet" href="/features/orderpage/order.css" >
 
   </head>
 
@@ -52,37 +53,81 @@ Enjoy A No-Wait Dining Experience  </p>
 
 
 
+   <!-- ============================= -->
+   <!-- main content row starts here -->
+   <!-- ============================= -->
 
 
 <div class="row">
   <div class="col">
+ <div class="guide">hover to pause</div>
 
+   <!-- =========== Boot Strap Img Slider here ================== -->
 
   <div id="foodSlider" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
+   <!-- =========== First  ================== -->
 
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/assets/images/rolls.png" alt="Loading Dish">
+      <img class="d-block w-100" src="/assets/images/order-images/rolls.png" alt="Loading Dish">
     </div>
 
 
+   <!-- =========== Second ================== -->
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/combo.png" alt="Burger">
+      <img class="d-block w-100" src="/assets/images/order-images/combo.png" alt="Burger">
     </div>
 
 
+   <!-- =========== Third ================== -->
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/porkchop.png" alt="PorkChop">
+      <img class="d-block w-100" src="/assets/images/order-images/porkchop.png" alt="PorkChop">
     </div>
   </div>
 </div>
+   <!-- ===========    Here is a Table That updates  ================== -->
+   <!-- =========== To The Right Of Th Img Slider ================== -->
+   <!-- ===========   as items get added to cart ================== -->
 
   </div>
-  <div class="col">col</div>
-  <div class="w-100"></div>
+  <div class="col-md-6">
+    <h3>Your Current Order</h3>
+    <table id="cartTable" class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>item</th>
+          <th>QTY</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        
+      </thead>
+      <tbody>
+        <!-- use js load function to inject items here from buttons  -->
+      </tbody>
+
+    </table>
+<button class="btn" onclick="clearCart()">Clear Cart</button>
+
+<div class="highlights">
+<h4><strong> Top Picks: </strong></h4>
+<h5>Double Cheese Burger Deluxe</h5> <p> flame-grilled patties layered with melted cheddar, lettuce, and tomato.</p>
+<h5>Classic Chop </h5> <p> smoky, savory, and suspiciously satisfying..</p>
+<h5>Almost Enchilatas</h5> <p>they’re not quite enchiladas, but they’re close enough.</p>
+</div>
+<div class="highlights2">
+<h4><strong>: </strong></h4>
+<h5>Double Cheese Burger Deluxe</h5> <p> flame-grilled patties layered with melted cheddar, lettuce, and tomato.</p>
+<h5>Classic Chop </h5> <p> smoky, savory, and suspiciously satisfying..</p>
+<h5>Almost Enchilatas</h5> <p>they’re not quite enchiladas, but they’re close enough.</p>
+</div>
+
+
+  </div>
+ 
 </div>
 
 
@@ -103,5 +148,85 @@ Enjoy A No-Wait Dining Experience  </p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/script.js"></script> <!-- main loader -->
   <script src="/assets/js/utils.js"></script>  <!-- utility -->
+
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu data -->
+<script src="/assets/js/menu-data.js"></script>
+
+
+
+   <!-- ============================= -->
+
+    <!-- Logic Begind Cart Display -->
+
+   <!-- ============================= -->
+
+<script>
+  
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Order page loaded');
+  
+  const cartTableBody = document.querySelector('#cartTable tbody');
+  
+  if (!cartTableBody) {
+    console.error('Cart table not found!');
+    return;
+  }
+  
+  let cart = [];
+  try {
+    const cartData = localStorage.getItem('cart');
+    console.log('Raw cart data:', cartData);
+    cart = cartData ? JSON.parse(cartData) : [];
+    console.log('Parsed cart:', cart);
+  } catch (e) {
+    console.error('Error loading cart:', e);
+  }
+  
+  cartTableBody.innerHTML = '';
+  
+  if (cart.length === 0) {
+    cartTableBody.innerHTML = '<tr><td colspan="4" class="text-center">Your cart is empty</td></tr>';
+    return;
+  }
+  
+  let grandTotal = 0;
+  // this loops through each item in the cart array 
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    grandTotal += itemTotal;
+    //  this created a new tale item and populate the row in the order screen
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>${item.quantity}</td>
+      <td>$${item.price.toFixed(2)}</td>
+      <td>$${itemTotal.toFixed(2)}</td>
+    `;
+    
+    cartTableBody.appendChild(row);
+  });
+  
+  const totalRow = document.createElement('tr');
+  totalRow.className = 'table-success';
+  totalRow.innerHTML = `
+    <td colspan="3"><strong>Grand Total</strong></td>
+    <td><strong>$${grandTotal.toFixed(2)}</strong></td>
+  `;
+  cartTableBody.appendChild(totalRow);
+  
+  console.log('Cart displayed:', cart.length, 'items');
+});
+</script>
+
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/utils.js"></script>
+</body>
+</html>
   </body>
 </html>
+
+
+

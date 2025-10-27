@@ -41,6 +41,7 @@ d-block{
     border-radius: 15px;
 }
 
-.carousel-item{
-   
+#cartTable{
+    letter-spacing: normal;
+    color: black;
 }
