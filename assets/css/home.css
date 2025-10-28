@@ -27,7 +27,7 @@ footer{margin-top: auto;}
 .nav-pills .nav-link.active,
 .navbar-nav .nav-link.active {
    color: aliceblue;
-   background-color: #0f4d86;
+   background-color: #0e4a82;
    font-size: large;
 }
 
@@ -43,11 +43,14 @@ img{
 
 .container-sign{
    text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-shadow: 1px 1px #0e4a82;
 }
 
 .container-sign p{
    margin-bottom: 50px;
    font-size: larger;
+   margin-top: 50px;
 }
 
 h1 img{
@@ -67,10 +70,15 @@ h1 img{
    object-fit: fill;
    border-radius: 10px;
    margin: 50px;
+   border:5px slategray;
+   border-style: double;
+   
+   
 }
 .container2{
    padding-top: 400px;
    text-align: center;
+   text-shadow: none;
 }
 
 /* Testimonial */
@@ -81,7 +89,7 @@ h1 img{
    border-color: rgb(113, 113, 113);
    padding: 10px;
    margin-top: 20px;
-   background-image: linear-gradient(to bottom, rgb(101, 56, 21), black);
+   background-image: linear-gradient(to bottom, #0e4a82, black);
    box-shadow: 0 4px 4px 0 #0000;
    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
    width:auto;
@@ -105,12 +113,15 @@ h1 img{
 .test-container::-webkit-scrollbar-track{
    background: rgba(255, 255, 255, 0.162);
 }
+h2{
+   text-decoration: underline;
+}
 
 h3{
    padding-top: 20px;
    font-family: 'Lucida Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',  Arial, sans-serif;
    font-style: oblique;
-   text-shadow: 1px 1px rgba(125, 69, 0, 0.704);
+   text-shadow: 1px 1px #0e4a82;
 }
 
 .test{
@@ -118,7 +129,8 @@ h3{
    flex:0 0 350px;
    text-align: center;
    border-radius: 40px;
-   background-color: rgb(211, 169, 118);
+   background-color: rgba(0, 78, 117, 0.595);
+   color: whitesmoke;
    width: 100%;
    max-width: 500px;
    margin: 10px;
