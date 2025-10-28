@@ -177,3 +177,14 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     clear: both;
     display: table;
 }
+
+
+.form-group{
+    width: 250px
+}
+
+.container .img-fluid{
+    position: relative;
+    display: block;
+    
+}
