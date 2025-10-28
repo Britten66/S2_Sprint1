@@ -23,7 +23,6 @@ body{
 main{flex: 1 0 auto;} /* filling all space */
 footer{margin-top: auto;}
 
-
 .nav-link.active,
 .nav-pills .nav-link.active,
 .navbar-nav .nav-link.active {
@@ -42,30 +41,42 @@ img{
    color: aliceblue;
 }
 
+.container-sign{
+   text-align: center;
+}
 
+.container-sign p{
+   margin-bottom: 50px;
+   font-size: larger;
+}
 
 h1 img{
    width:100px;
    height:100px;
-   image-rendering:crisp-edges;
 }
 
 .row1{
-   column-count: 3;
-   margin-bottom: 10px;
+   display: block;
+   margin-left: 185px;
 }
 
-.col img{
+.row1 img{
+   float: left;
+   width: 200px;
+   height: 250px;
    object-fit: fill;
+   border-radius: 10px;
+   margin: 50px;
 }
-
-
-
+.container2{
+   padding-top: 400px;
+   text-align: center;
+}
 
 /* Testimonial */
 
 .test-container{
-   display:block;
+   display:grid;
    border-style: ridge;
    border-color: rgb(113, 113, 113);
    padding: 10px;
@@ -74,10 +85,12 @@ h1 img{
    box-shadow: 0 4px 4px 0 #0000;
    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
    width:auto;
+   max-width: fit-content;
    height: 400px;
    overflow-y: auto;
    scroll-behavior: smooth;
-   margin-left: 25%;
+   margin-left: 28%;
+   
 }
 
 .test-container::-webkit-scrollbar{
@@ -119,7 +132,6 @@ blockquote img{
    border-radius: 50%;
    object-position: left;
    margin: 20px;
-   
 }
 
 
