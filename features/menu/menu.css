@@ -1,9 +1,16 @@
+/* Menu page */
+
 #bg-video-menu {
   position: absolute;
-  top: 40px;
+  top: 2.7rem;
   left: 0;
+  bottom: 1rem;
   width: 100%;
   height: 200px;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+}
+
+#containermenu {
+  margin-top: 12rem;
 }
