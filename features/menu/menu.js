@@ -97,6 +97,29 @@
 //   });
 // })();
 
+{
+  /* <div class="input-group mb-3">
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                for="mediumroast"
+                class="quantity-input"
+                id="qty-mediumroast"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div> */
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const quantitySelectors = document.querySelectorAll(".quantity-selector");
 

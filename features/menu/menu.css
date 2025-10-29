@@ -14,3 +14,17 @@
 #containermenu {
   margin-top: 12rem;
 }
+
+.price {
+  color: green;
+  font-weight: 800;
+}
+
+.col-menu {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.col-menu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
