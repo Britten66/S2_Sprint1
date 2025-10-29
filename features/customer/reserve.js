@@ -11,6 +11,31 @@ document.addEventListener("DOMContentLoaded", () => {
   // same applying to days here so it doesnt have to be writtenb out
 
   const dayList = document.querySelector(".days");
+
+  //=============================
+  //  trying to link the confimation table with the guests picked et here
+  //=============================
+  //this will show the date selected in the confirm area
+  const confirmDate = document.getElementById("confirmDate");
+
+  //guests picked from drop down
+  const confirmGuests = document.getElementById("confirmGuests");
+  //time drop down
+
+  const confirmTime = document.getElementById("confirmTime");
+  //area picked will be from the calendar made above
+
+  const confirmArea = document.getElementById("confirmArea");
+
+  //the calander was not so easy to transfer
+
+  const timeSelect = document.getElementById("timeSelect");
+
+  const guestSelect = document.getElementById("guestSelect");
+
+  const areaChecks = document.querySelectorAll('input[name="areaChoice"]');
+  // moving to funcitons for confiriming set up
+
   //=============================
   //month names here
   //=============================
@@ -35,6 +60,38 @@ document.addEventListener("DOMContentLoaded", () => {
   //=============================
 
   let current = new Date();
+
+  // this kind of took forever but
+  // found a handler for the form, it was storing and breaking when refreshed
+  //this should handle dupes
+  // 'input[name="areaChoice"]'
+  //need to use this ^^
+
+  function setConfirm(y, mIdx, d) {
+    const monthName = months[mIdx];
+    confirmDate.textContent = `${monthName} ${d}, ${y}`;
+  }
+
+  function setGuests(val) {
+    confirmGuests.textContent = val || "No Guest Selected"; // this will handle the validation within this funciton and conftinued in same format
+  }
+
+  function setTime(val) {
+    confirmTime.textContent = val || "No Time Selected";
+  }
+
+  // Here is the calendar validation functiion
+  // it was also very complex and reqwuired .map
+
+  function setArea() {
+    const selected = Array.from(areaChecks)
+      .filter((c) => c.checked && !c.disabled)
+      //map here
+      .map((c) => c.value.trim());
+    confirmArea.textContent = selected.length
+      ? selected.join(",")
+      : " No Seating Picked Yet ";
+  }
 
   //=============================
   // building a grid for current month here
@@ -82,14 +139,18 @@ document.addEventListener("DOMContentLoaded", () => {
     dayList.innerHTML = parts.join("");
 
     //trying to get the current date to auto highlight
+    // working **
     const today = new Date();
 
     if (year === today.getFullYear() && month === today.getMonth()) {
       dayList
         .querySelector(`li[data-day="${today.getDate()}"]`)
         ?.classList.add("active");
+
+      setConfirm(year, month, today.getDate());
     }
   }
+
   //=============================
   //funciton will update this
   //=============================
@@ -124,9 +185,36 @@ document.addEventListener("DOMContentLoaded", () => {
       .forEach((n) => n.classList.remove("active"));
 
     li.classList.add("active");
+
+    //clicked date here
+
+    setConfirm(
+      current.getFullYear(),
+      current.getMonth(),
+      Number(li.dataset.day)
+    );
   });
   //=============================
   // this was not running stack overflow post referenced runninng the update outside aswell
   //=============================
   updateCalendar();
+
+  // if statements to handle confirmation
+
+  if (guestSelect) setGuests(guestSelect.value);
+  if (timeSelect) setTime(timeSelect.value);
+
+  // calendar select here again
+
+  setArea();
+
+  // event handling here
+
+  if (guestSelect)
+    guestSelect.addEventListener("change", (e) => setGuests(e.target.value));
+  if (timeSelect)
+    timeSelect.addEventListener("change", (e) => setTime(e.target.value));
+  // calander event listener that was hard to handle here again and final .. hoping ..
+
+  areaChecks.forEach((c) => c.addEventListener("change", setArea));
 });

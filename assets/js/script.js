@@ -5,6 +5,9 @@
 
 // loading shared header section
 
+// This async function loads an external HTML file (like header or footer) into a page section.
+// It fetches the file, checks for errors, and injects the content into the target element.
+
 async function loadShared(section, file) {
   try {
     const res = await fetch(`/assets/shared/${file}`);
@@ -22,6 +25,7 @@ async function loadShared(section, file) {
 // ================================= DOM HERE =================
 document.addEventListener("DOMContentLoaded", async () => {
   //this waits until the header laods all the way
+
   await loadShared("header", "header.html");
 
   if (typeof highlightActiveNav === "function") {
