@@ -58,6 +58,7 @@ const menuItems = {
   squidrings: { name: " Squid Rings", price: 9.99 },
   cherrychips: { name: "Cherry Chips", price: 3.99 },
   halfwings: { name: "Three Extra Wings", price: 4.99 },
+  wings: { name: "Zinger Wings", price: 5.99 },
 
   //==============
   // Main Courses
@@ -101,6 +102,7 @@ const menuItems = {
   creamer: { name: "Creamer", price: 0 },
   sugar: { name: "Sugar", price: 0 },
   sweetener: { name: "Sweetener", price: 0 },
+  gatorade: { name: "Gatorade", price: 1.99 },
 };
 
 console.log("Menu data loaded:", Object.keys(menuItems).length, "items");
