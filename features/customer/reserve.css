@@ -1,30 +1,43 @@
 /* reserving table entry handler  */
 
+/* fixed wide for the form input */ 
+
+
 .input-group{
     margin-top: auto;
     width: 800px;
     
 }
 
+/* layout sizing helper */ 
+
 html,body {
     height: 100%;
 
 }
+
+
+/* flexbox to start here  */ 
+/* added flex direciton column to make sure the layout will stack  */ 
+
 body{
     display: flex;
-
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 footer{
     margin-top: auto;
+    flex-direction: column;
 }
 /* calender css */
 
 ul{list-style-type: none;}
-body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
 
 
 
 /* header that says the month will be here  */
+/* month starts here done **  */
 
 .month{
     padding: 20px 25px;
@@ -32,6 +45,8 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     background-color: #0F4D86;
     text-align: center;
 }
+
+
 
 /* listing month */
 
@@ -45,7 +60,7 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 .month ul li {
     color: white;
-    font-size: 20px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     
@@ -59,6 +74,8 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 .month #month-label {
     flex: 1;
+    /* putting this here will create space between our buttons */
+
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -67,7 +84,7 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 /* next button styling here  */
 
 .month .next{
-    float: right;
+
     padding-top: 10px;
     cursor: pointer;
 }
@@ -78,6 +95,8 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
     margin: 0; 
     padding: 5px 0;
+    /* putting top padding here */
+
     background-color: #9B9898;
     
 }
@@ -88,34 +107,45 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     color: black;
  /* had trouble making this consisted  */
     width: 2rem; height: 2rem;
-   display: inline-flex; align-items: center; justify-content: center;
+   display: inline-flex; 
+   align-items: center;
+   /* making this readable and keeping the button on either side  */
+
+    justify-content: center;
 }
+
+
+
 .month button:hover { 
-    background: rgba(255,255,255,.12); }
+    background: rgba(0, 0, 0, 0.116); 
+    border-radius: 55px;
+}
 
 
 .weekdays li{
     display: inline-block;
-    width:22px;
+    width:32px;
     color: black;
-    text-align: center;
+   
 }
 
 .days{
-    padding: 1px 0;
+    padding: 1px;
     background: #9B9898;
-    margin: 0;
+    margin: auto;
     cursor: pointer;
+   
 }
 
 .days li {
 
-    list-style: none;
+
     display: inline-block;
-    width: 14%;
+
+    width: 13.6%;
     text-align: center;
-    margin-bottom: 5px;
-    font-size: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
     color: black;
 }
 
@@ -157,11 +187,44 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     letter-spacing: 50px;
     padding-top: 15px;
     font-weight: bold;
+    margin-top: 100px;
+}
+
+.text-muted p{
+    color: rgb(255, 255, 255);
+}
+
+
+.column {
+
+    width: 35px;
+    padding: 2px;
 
 }
 
-.text-muted{
-    color: wheat;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.form-group{
+    width: 250px;
+}
+
+
+
+.event-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    
+    box-shadow: 0 5px 20px black;
+}
+
+#container{
+    margin-top: 25px;
 }
 
 
@@ -177,3 +240,18 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     clear: both;
     display: table;
 }
+<<<<<<< HEAD
+=======
+.text-muted{
+    color: wheat;
+}
+
+
+.column {
+    float: left;
+    width: 35px;
+    padding: 2px;
+
+}
+
+>>>>>>> main
