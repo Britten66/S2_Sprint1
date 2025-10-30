@@ -24,7 +24,7 @@ footer{margin-top: auto;}
 .nav-pills .nav-link.active,
 .navbar-nav .nav-link.active {
    color: aliceblue;
-   background-color: #0F4D86;
+   background-color: rgba(245, 222, 179, 0.538);
    font-size: large;
 }
 

@@ -1,9 +1,30 @@
+/* Menu page */
+
 #bg-video-menu {
   position: absolute;
-  top: 40px;
+  top: 2.7rem;
   left: 0;
+  bottom: 1rem;
   width: 100%;
   height: 200px;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+}
+
+#containermenu {
+  margin-top: 12rem;
+}
+
+.price {
+  color: green;
+  font-weight: 800;
+}
+
+.col-menu {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.col-menu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
 }
