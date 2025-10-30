@@ -86,7 +86,8 @@ h1 img{
 }
 
 .container2{
-
+   padding-left: 50px;
+   padding-right:50px;
    padding-top: 50px;
    text-align: center;
    text-shadow: none;
@@ -158,6 +159,3 @@ blockquote img{
    object-position: left;
    margin: 20px;
 }
-
-
-
