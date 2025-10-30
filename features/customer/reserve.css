@@ -202,10 +202,26 @@ ul{list-style-type: none;}
 
 }
 
+<<<<<<< HEAD
+=======
+.text-muted{
+    color: wheat;
+}
+
+
+.column {
+    float: left;
+    width: 35px;
+    padding: 2px;
+
+}
+
+>>>>>>> main
 .row::after {
     content: "";
     clear: both;
     display: table;
+<<<<<<< HEAD
 }
 
 
@@ -227,3 +243,6 @@ ul{list-style-type: none;}
     margin-top: 25px;
 }
 
+=======
+}
+>>>>>>> main
