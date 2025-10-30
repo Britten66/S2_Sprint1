@@ -15,9 +15,16 @@
   margin-top: 12rem;
 }
 
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .price {
   color: green;
   font-weight: 800;
+  margin-right: 0.2rem;
 }
 
 .col-menu {
@@ -27,4 +34,18 @@
 .col-menu:hover {
   transform: translateY(-5px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
+
+img {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header {
+  color: whitesmoke;
+  letter-spacing: 50px;
+  padding-top: 0;
+  font-weight: bold;
+  margin-top: 0;
 }
