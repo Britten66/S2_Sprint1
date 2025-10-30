@@ -21,45 +21,24 @@ const menuItems = {
   //=============================================================
 
   //==============
-<<<<<<< HEAD
-  // Breakdfast
-=======
   // Breakfast
->>>>>>> main
   //==============
 
   avotoastegg: { name: "Avocado Toast With Egg", price: 8.99 },
   croissant: { name: "Croissant", price: 6.99 },
   yogurt: { name: "Yogurt Parfait", price: 6.99 },
-<<<<<<< HEAD
-  omelet: { name: "Omelet", price: 11.99 },
-  pancakes: { name: "Stack of Pancakes", price: 14.99 },
-=======
   omelette: { name: "Omelette", price: 11.99 },
   pancakes: { name: "Stack of Pancakes", price: 14.99 },
   oneegg: { name: "Extra Egg", price: 0.99 },
   onetoast: { name: "Extra Toast", price: 0.99 },
   oatmeal: { name: "Plain Oatmeal", price: 1.99 },
   pancake: { name: "Extra Pancake", price: 2.49 },
->>>>>>> main
 
   //==============
   // lunches
   //==============
 
   burger: { name: "Double Cheese Burger", price: 9.99 },
-<<<<<<< HEAD
-  subsandwich: { name: "Veggie Sub", price: 6.99 },
-  sandwichsalad: { name: "Sandwich & Salad", price: 8.99 },
-  salad: { name: "Garden Salad", price: 12.99 },
-  burger2: { name: "Simple Hamburger", price: 9.99 },
-
-  //==============
-  // Aopps
-  //==============
-
-  dip: { name: "Spinach Dip", price: 8.99 },
-=======
   veggiesub: { name: "Veggie Sub", price: 6.99 },
   clubsalad: { name: "Clubhouse & Salad", price: 8.99 },
   gardensalad: { name: "Garden Salad", price: 12.99 },
@@ -79,7 +58,6 @@ const menuItems = {
   squidrings: { name: " Squid Rings", price: 9.99 },
   cherrychips: { name: "Cherry Chips", price: 3.99 },
   halfwings: { name: "Three Extra Wings", price: 4.99 },
->>>>>>> main
   wings: { name: "Zinger Wings", price: 5.99 },
 
   //==============
@@ -88,10 +66,6 @@ const menuItems = {
 
   spaghetti: { name: "Spaghetti", price: 15.99 },
   shrimp: { name: "Shrimp Gumbo w/ Rice", price: 15.99 },
-<<<<<<< HEAD
-  stake: { name: "Top Loin Steak", price: 15.99 },
-  lasagna: { name: "Lasagna", price: 15.99 },
-=======
   steak: { name: "Top Loin Steak", price: 15.99 },
   lasagna: { name: "Lasagna", price: 15.99 },
   chicken: { name: "Chicken Piccata", price: 15.99 },
@@ -99,7 +73,6 @@ const menuItems = {
   extrashrimp: { name: "Extra Shrimp", price: 4.99 },
   chickenbreast: { name: "Extra Chicken Breast", price: 4.99 },
   mashedpatato: { name: "Extra Mashed Patato", price: 4.99 },
->>>>>>> main
 
   //==============
   // Drinks here
@@ -111,26 +84,15 @@ const menuItems = {
   speccoffee: { name: "Specialty Coffee", price: 2.49 },
   steeptea: { name: "Steep Tea", price: 1.49 },
   greentea: { name: "Green Tea", price: 1.79 },
-<<<<<<< HEAD
-  earlgraytea: { name: "Earl Gray Tea", price: 1.79 },
-  spectea: { name: "Specialty Tea", price: 2.29 },
-  water: { name: "Water", price: 0.99 },
-  pepis: { name: "Pepsi", price: 1.99 },
-  "7up": { name: "7 UP", price: 1.99 },
-=======
   earlgray: { name: "Earl Gray Tea", price: 1.79 },
   spectea: { name: "Specialty Tea", price: 2.29 },
   water: { name: "Water", price: 0.99 },
   pepis: { name: "Pepsi", price: 1.99 },
   sevenup: { name: "7 UP", price: 1.99 },
->>>>>>> main
   coke: { name: "Coke", price: 1.99 },
   cokezero: { name: "Coke Zero", price: 1.99 },
   apple: { name: "Apple Juice", price: 1.99 },
   orange: { name: "Orange Juice", price: 1.99 },
-<<<<<<< HEAD
-  gaderade: { name: "Gatorade", price: 1.99 },
-=======
   // gatorade: { name: "Gatorade", price: 1.99 },
 
   //=============
@@ -141,7 +103,6 @@ const menuItems = {
   sugar: { name: "Sugar", price: 0 },
   sweetener: { name: "Sweetener", price: 0 },
   gatorade: { name: "Gatorade", price: 1.99 },
->>>>>>> main
 };
 
 console.log("Menu data loaded:", Object.keys(menuItems).length, "items");
