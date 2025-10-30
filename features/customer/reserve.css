@@ -240,3 +240,18 @@ ul{list-style-type: none;}
     clear: both;
     display: table;
 }
+<<<<<<< HEAD
+=======
+.text-muted{
+    color: wheat;
+}
+
+
+.column {
+    float: left;
+    width: 35px;
+    padding: 2px;
+
+}
+
+>>>>>>> main
