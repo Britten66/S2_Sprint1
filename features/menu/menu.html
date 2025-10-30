@@ -42,7 +42,8 @@
       <div class="container text-center" id="containermenu">
         <div class="row">
           <div
-            class="col bg-white border border-black shadow p-2 mb-2 bg-body-tertiary rounded"
+            class="col text-white border-black shadow p-2 mb-2 bg-body-tertiary rounded"
+            style="background-color: #0a4275"
           >
             <h4>Breakfast Time!</h4>
           </div>
@@ -54,98 +55,127 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/avotoastegg.jpg" alt="avotoastegg" />
+            <img
+              src="/assets/images/avotoastegg.jpg"
+              class="img-fluid"
+              alt="avotoastegg"
+            />
             <h5>Avocado Toast w/ Egg</h5>
             <p>Our popular avocado toast top with two poached eggs.</p>
-            <p>$8.99</p>
+            <p class="price">$8.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="avotoastegg"
+              >
+                Add to Cart
+              </button>
 
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="avotoastegg"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
-              <button type="button" class="btn btn-outline-primary plus">
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 plus"
+              >
                 +
               </button>
               <input
                 type="text"
-                for="avotoastegg"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
-              />
-              <button type="button" class="btn btn-outline-primary minus">
-                -
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
-          >
-            <img src="/assets/images/pastry3.jpg" alt="pastery" />
-            <h5>Croissant</h5>
-            <p>Flaky, buttery pastry, great paired with our fresh coffee.</p>
-            <p>$6.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="croissant"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
-              <button type="button" class="btn btn-outline-primary plus">
-                +
-              </button>
-              <input
-                type="text"
-                for="croissant"
-                maxlength="3"
-                size="2"
-                value="1"
-                style="text-align: center"
-                class="quantity-input"
-              />
-              <button type="button" class="btn btn-outline-primary minus">
-                -
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
-          >
-            <img src="/assets/images/yogurt.jpg" alt="yogurt" />
-            <h5>Yogurt Parfait</h5>
-            <p>With fresh picked blueberries, granola and yogurt.</p>
-            <p>$6.99</p>
-            <button type="button" class="btn btn-outline-primary" id="yogurt">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
-              <button type="button" class="btn btn-outline-primary plus">
-                +
-              </button>
-              <input
-                type="text"
-                for="yogurt"
-                maxlength="3"
-                size="2"
-                value="1"
-                style="text-align: center"
-                class="quantity-input"
+                id="qty-avotoastegg"
               />
               <button
                 type="button"
-                class="btn btn-outline-primary minus"
+                class="btn btn-outline-primary btn-sm pb-1 minus"
+              >
+                -
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+          >
+            <img
+              src="/assets/images/pastry3.jpg"
+              class="img-fluid"
+              alt="pastery"
+            />
+            <h5>Croissant</h5>
+            <p>Flaky, buttery pastry, great paired with our fresh coffee.</p>
+            <p class="price">$6.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="croissant"
+              >
+                Add to Cart
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 plus"
+              >
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-croissant"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 minus"
+              >
+                -
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+          >
+            <img
+              src="/assets/images/yogurt.jpg"
+              class="img-fluid"
+              alt="yogurt"
+            />
+            <h5>Yogurt Parfait</h5>
+            <p>With fresh picked blueberries, granola and yogurt.</p>
+            <p class="price">$6.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button type="button" class="btn btn-outline-primary" id="yogurt">
+                Add to Cart
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 plus"
+              >
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-yogurt"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 minus"
                 value="1"
               >
                 -
@@ -159,14 +189,32 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/omelettepan.jpg" alt="omelet" />
+            <img
+              src="/assets/images/omelettepan.jpg"
+              class="img-fluid"
+              alt="omelet"
+            />
             <h5>Omelette</h5>
             <p>
               Three beaten eggs, fried in butter, with veggies, meat and cheese.
               Two pieces of toast.
             </p>
+            <p class="price">$11.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="omelette"
+              >
+                Add to Cart
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 plus"
+              >
             <p>$11.99</p>
             <button type="button" class="btn btn-outline-primary" id="omelette">
               Add to Cart
@@ -177,13 +225,17 @@
               </button>
               <input
                 type="text"
-                for="omelette"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-omelette"
               />
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-sm pb-1 minus"
+              >
               <button type="button" class="btn btn-outline-primary minus">
                 -
               </button>
@@ -191,30 +243,39 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/pancake.jpg" alt="pancakes" />
+            <img
+              src="/assets/images/pancake.jpg"
+              class="img-fluid"
+              alt="pancakes"
+            />
             <h5>Stack of Pancakes</h5>
             <p>
               Ten homemade pancakes, drizzled in AA canadian maple syrup,
               butter, with a side of fruit.
             </p>
-            <p>$14.99</p>
-            <button type="submit" class="btn btn-outline-primary" id="pancakes">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$14.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="submit"
+                class="btn btn-outline-primary"
+                id="pancakes"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="pancakes"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-pancakes"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -223,26 +284,75 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded addons"
           >
-            <h5>Start of the Day</h5>
-            <br />
-            <p>One Egg w/ One Toast...........................$4.99</p>
-            <!-- <button id="oneeggtoast">Add</button> -->
-            <p>Two Eggs w/ Two Toast.........................$8.99</p>
-            <!-- <button id="twoeggstoast">Add</button> -->
-            <p>Three Eggs w/ Three Toast...................$12.49</p>
-            <!-- <button id="threeeggstoast">Add</button> -->
-            <p>Pouched Egg w/ Toast..........................$4.99</p>
-            <!-- <button id="pouchedeggtoast">Add</button> -->
-            <p>Yogurt w/ Strawberries..........................$6.99</p>
-            <!-- <button id="yogurtstrawberries">Add</button> -->
-            <p>Oatmeal w/ Fruit....................................$4.99</p>
-            <!-- <button id="oatmealfruit">Add</button> -->
-            <p>Two French Toast w/ Fruit.....................$6.99</p>
-            <!-- <button id="frenchtoastfruit">Add</button> -->
-            <p>Three Pancakes w/ Fruit........................$5.99</p>
-            <!-- <button id="threepancakesfruit">Add</button> -->
+            <h5>Morning Addons</h5>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Egg........................................................<span
+                  class="price"
+                  >$0.99</span
+                >
+              </p>
+              <p></p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="oneegg"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Toast.....................................................<span
+                  class="price"
+                  >$0.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="onetoast"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Plain Oatmeal........................................<span
+                  class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="oatmeal"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Pancake.................................................<span
+                  class="price"
+                  >$2.49</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="pancake"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
           </div>
         </div>
 
@@ -260,30 +370,35 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/burgerfries.jpg" alt="burger" />
+            <img
+              src="/assets/images/burgerfries.jpg"
+              class="img-fluid"
+              alt="burger"
+            />
             <h5>Double Cheese Burger</h5>
             <p>
               Our famous double pattie burger, topped with bacon, two slices of
               cheese, pickles, fried onions and our homemade burger sauce.
             </p>
-            <p>$9.99</p>
-            <button type="button" class="btn btn-outline-primary" id="burger">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$9.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button type="button" class="btn btn-outline-primary" id="burger">
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="burger"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-burger"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -292,34 +407,39 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/subsandwich.jpg" alt="subsandwich" />
+            <img
+              src="/assets/images/subsandwich.jpg"
+              class="img-fluid"
+              alt="subsandwich"
+            />
             <h5>Veggie Sub</h5>
             <p>
               Our homemade bread filled with romaine lettus, cherry tomatoes,
               cucumber, sweet onions, and fresh mozzarella. 🥕
             </p>
-            <p>$6.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="veggiesub"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$6.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="veggiesub"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="veggiesub"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-veggiesub"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -328,35 +448,40 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/sandwich.jpg" alt="sandwichsalad" />
+            <img
+              src="/assets/images/sandwich.jpg"
+              class="img-fluid"
+              alt="sandwichsalad"
+            />
             <h5>Clubhouse & Salad</h5>
             <p>
               Three pieces of bread, turkry, bacon, lettuce, tomato and
               mayonnaise bring together this classic sandwich w/ a side of
               salad.
             </p>
-            <p>$8.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="clubsalad"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$8.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="clubsalad"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="clubsalad"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-clubsalad"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -370,34 +495,35 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/salad.jpg" alt="salad" />
+            <img src="/assets/images/salad.jpg" class="img-fluid" alt="salad" />
             <h5>Garden Salad</h5>
             <p>
               Sliced avocado, bright red tomotes, sweet patatos, red cabbage,
               romaine lettuce, a bit of everything from the garden. 🥕
             </p>
-            <p>$12.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="gardensalad"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$12.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="gardensalad"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="gardensalad"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-gardensalad"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -406,34 +532,39 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/burger2.jpg" alt="burger2" />
-            <h5>Simple hamburger</h5>
+            <img
+              src="/assets/images/burger2.jpg"
+              class="img-fluid"
+              alt="burger2"
+            />
+            <h5>Simple Hamburger</h5>
             <p>
               A plain hamburger, single pattie, with a side of cherry tomotes,
               diced cucumber, lettuce, sprinkled w/ feta cheese.
             </p>
-            <p>$9.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="burgersalad"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$9.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="burgersalad"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="burgerfries"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-burgersalad"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -442,26 +573,74 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <h5>More Eats</h5>
-            <br />
-            <p>Soup of the Day...............................$4.99</p>
-            <!-- <button id="soup">Add</button> -->
-            <p>Soup w/ grilled cheese.....................$8.99</p>
-            <!-- <button id="soupgrilled">Add</button> -->
-            <p>Grilled Cheese..................................$3.99</p>
-            <!-- <button id="grilled">Add</button> -->
-            <p>Chicken Fingers................................$7.99</p>
-            <!-- <button id="fingers">Add</button> -->
-            <p>Chichen Fingers w/ fries..................$11.99</p>
-            <!-- <button id="fingerfries">Add</button> -->
-            <p>Hot Dog............................................$2.99</p>
-            <!-- <button id="hotdog">Add</button> -->
-            <p>Hot Dog w/ Fries..............................$6.99</p>
-            <!-- <button id="hotfries">Add</button> -->
-            <p>Chill Dog...........................................$3.99</p>
-            <!-- <button id="chilldog">Add</button> -->
+            <h5>Lunch Addons</h5>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Hot Dog...................................................<span
+                  class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="hotdog"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Hamburger..............................................<span
+                  class="price"
+                  >$2.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="hamburger"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Fries........................................................<span
+                  class="price"
+                  >$2.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="fries"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Dressing & Gravy....................................<span
+                  class="price"
+                  >$2.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="dressinggravy"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
           </div>
         </div>
 
@@ -479,35 +658,40 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/dipchips.jpg" alt="dipchips" />
+            <img
+              src="/assets/images/dipchips.jpg"
+              class="img-fluid"
+              alt="dipchips"
+            />
             <h5>Spinach Dip</h5>
             <p>
               Four differet types of cheese, fresh spinach, artichokes hearts,
               sour cream, mayonnaise, salt and peper with cherry chips on the
               side.
             </p>
-            <p>$8.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="spinachdip"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$8.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="spinachdip"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="spinachdip"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-spinachdip"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -516,31 +700,32 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/wings.jpg" alt="wings" />
+            <img src="/assets/images/wings.jpg" class="img-fluid" alt="wings" />
             <h5>Zinger Wings</h5>
             <p>
               Delicious maranated chicken wings cooked in a chrispy batter and
               covered in out in-house made zinger sauce. These wings are for the
               spicy lovers! 🌶️ 🌶️ 🌶️ 🌶️
             </p>
-            <p>$5.99</p>
-            <button type="button" class="btn btn-outline-primary" id="wings">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$5.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button type="button" class="btn btn-outline-primary" id="wings">
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="wings"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-wings"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -549,26 +734,75 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
             <h5>Other Apps</h5>
-            <br />
-            <p>Onion Rings...............................$5.99</p>
-            <!-- <button id="onion">Add</button> -->
-            <p>Squid Rings...............................$9.99</p>
-            <!-- <button id="squid">Add</button> -->
-            <p>Blooming Onion........................$5.99</p>
-            <!-- <button id="blonion">Add</button> -->
-            <p>Pickle Chips..............................$4.99</p>
-            <!-- <button id="picklechip">Add</button> -->
-            <p>Cherry Chips.............................$2.99</p>
-            <!-- <button id="cherrychip">Add</button> -->
-            <p>Salsa.........................................$3.99</p>
-            <!-- <button id="salsa">Add</button> -->
-            <p>Wedge Fries..............................$3.99</p>
-            <!-- <button id="wedge">Add</button> -->
-            <p>Taco Salad................................$5.99</p>
-            <!-- <button id="tacosalad">Add</button> -->
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Onion Rings...........................................<span
+                  class="price"
+                  >$9.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="onionrings"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Squid Rings............................................<span
+                  class="price"
+                  >$9.99</span
+                >
+              </p>
+
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="squidrings"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Cherry Chips..........................................<span
+                  class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="cherrychips"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Half Zinger Wings..................................<span
+                  class="price"
+                  >$4.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="halfwings"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
           </div>
         </div>
 
@@ -586,34 +820,39 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/pasta2.jpg" alt="spaghetti" />
+            <img
+              src="/assets/images/pasta2.jpg"
+              class="img-fluid"
+              alt="spaghetti"
+            />
             <h5>Spaghetti</h5>
             <p>
               Our homemade pasta paired with fresh tomato sauce, topped with
               cherry tomatoes, fresh basil and mozzarella cheese.
             </p>
-            <p>$14.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="spaghetti"
-            >
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$14.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="spaghetti"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="spaghetti"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-spaghetti"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -622,31 +861,36 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/shrimp.jpg" alt="shrimp" />
+            <img
+              src="/assets/images/shrimp.jpg"
+              class="img-fluid"
+              alt="shrimp"
+            />
             <h5>Shrimp Gumbo w/ Rice</h5>
             <p>
               Perfect cooked shrimp, on a bed on rice, celery onions, green bell
               peppers and seasoned with cajun spices. This dish is for the spicy
               lovers! 🌶️ 🌶️ 🌶️
             </p>
-            <p>$14.99</p>
-            <button type="button" class="btn btn-outline-primary" id="shrimp">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$14.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button type="button" class="btn btn-outline-primary" id="shrimp">
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="shrimp"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-shrimp"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -655,31 +899,32 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/stake.jpg" alt="steak" />
+            <img src="/assets/images/stake.jpg" class="img-fluid" alt="steak" />
             <h5>Top Loin Steak</h5>
             <p>
               With it robust beefy flavor and tenderness this steak is the
               perfect dinner, a side of twiced baked mashed potatoes top with
               melted cheese.
             </p>
-            <p>$15.99</p>
-            <button type="button" class="btn btn-outline-primary" id="steak">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$15.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button type="button" class="btn btn-outline-primary" id="steak">
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="steak"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-steak"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -693,30 +938,39 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/pasta3.jpg" alt="" />
+            <img
+              src="/assets/images/pasta3.jpg"
+              class="img-fluid"
+              alt="pasta"
+            />
             <h5>Lasagna</h5>
             <p>
               Four layers of lean ground meat, ricotta cheese, mozzarella
               cheese, parmesan cheese with a side of vegetables.
             </p>
-            <p>$15.99</p>
-            <button type="button" class="btn btn-outline-primary" id="lasagna">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$15.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="lasagna"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="lasagna"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-lasagna"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -725,30 +979,39 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/wetstake.jpg" alt="chicken" />
+            <img
+              src="/assets/images/wetstake.jpg"
+              class="img-fluid"
+              alt="chicken"
+            />
             <h5>Chicken Piccata</h5>
             <p>
               Perfectly seared bonless chicken breast topped with our amazing
               sauce and a side of cherry tomatoes, olives, and mushrooms.
             </p>
-            <p>$15.99</p>
-            <button type="button" class="btn btn-outline-primary" id="chicken">
-              Add to Cart
-            </button>
-            <div class="quantity-selector">
+            <p class="price">$15.99</p>
+            <div class="justify-content-center input-group quantity-selector">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="chicken"
+              >
+                Add to Cart
+              </button>
+
               <button type="button" class="btn btn-outline-primary plus">
                 +
               </button>
               <input
                 type="text"
-                for="chicken"
                 maxlength="3"
                 size="2"
                 value="1"
                 style="text-align: center"
                 class="quantity-input"
+                id="qty-chicken"
               />
               <button type="button" class="btn btn-outline-primary minus">
                 -
@@ -757,26 +1020,72 @@
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <h5>Other Favorites</h5>
-            <br />
-            <p>Shrimp Alfredo...............................$14.99</p>
-            <!-- <button id="alfredo">Add</button> -->
-            <p>Caprese Chicken............................$14.99</p>
-            <!-- <button id="caprese">Add</button> -->
-            <p>Mac and Cheese.............................$13.99</p>
-            <!-- <button id="chilemac">Add</button> -->
-            <p>Veggie Fajitas..................................$11.99</p>
-            <!-- <button id="fajitas">Add</button> -->
-            <p>Lemon Herb Chicken......................$14.99</p>
-            <!-- <button id="lemonherb">Add</button> -->
-            <p>Spicy Salmon w/ Rice......................$16.99</p>
-            <!-- <button id="ricebowl">Add</button> -->
-            <p>Chicken Teriyaki..............................$14.99</p>
-            <!-- <button id="hotfries">Add</button> -->
-            <p>Cajun Chicken Pasta.......................$13.99</p>
-            <!-- <button id="chilldog">Add</button> -->
+            <h5>Dinner Addons</h5>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Rice..........................................................<span
+                  class="price"
+                  >$3.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="rice"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Shrimp....................................................
+                <span class="price">$4.99</span>
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="extrashrimp"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Chicken Breast.........................................<span
+                  class="price"
+                  >$4.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="chickenbreast"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="pt-3">
+                Mashed Patato.........................................<span
+                  class="price"
+                  >$4.99</span
+                >
+              </p>
+              <button
+                type="submit"
+                class="btn btn-outline-primary btn-sm"
+                id="mashedpatato"
+              >
+                Add
+              </button>
+            </div>
+            <hr />
           </div>
         </div>
 
@@ -795,17 +1104,25 @@
           <div
             class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/coffee3.jpg" alt="specicoffee" />
+            <img
+              src="/assets/images/coffee3.jpg"
+              class="img-fluid"
+              alt="specicoffee"
+            />
           </div>
           <div
             class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/randomdrinks.jpg" alt="randomdrinks" />
+            <img
+              src="/assets/images/randomdrinks.jpg"
+              class="img-fluid"
+              alt="randomdrinks"
+            />
           </div>
           <div
             class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
-            <img src="/assets/images/beer.jpg" alt="beer" />
+            <img src="/assets/images/beer.jpg" class="img-fluid" alt="beer" />
           </div>
         </div>
 
@@ -814,11 +1131,11 @@
           style="grid-template-columns: 1fr 1fr 1fr"
         >
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
             <h5>Morning Brews</h5>
-            <br />
-            <p>Light Roast..........................$1.99</p>
+            <hr />
+            <!-- <p>Light Roast..........................$1.99</p>
             <button
               type="button"
               class="btn btn-outline-primary"
@@ -840,33 +1157,39 @@
             />
             <button type="button" class="btn btn-outline-primary" id="minus">
               -
-            </button>
-
-            <p>Medium Roast.....................$1.99</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="mediumroast"
+            </button> -->
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
             >
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="mediumroast"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
-
-            <p>Dark Roast...........................$1.99</p>
+              <p>
+                Medium Roast.....................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="mediumroast"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-mediumroast"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+            <!-- <p>Dark Roast...........................$1.99</p>
             <button
               type="button"
               class="btn btn-outline-primary"
@@ -888,53 +1211,73 @@
             />
             <button type="button" class="btn btn-outline-primary" id="minus">
               -
-            </button>
-
-            <p>Specialty Coffee................$2.49</p>
-            <button
-              type="button"
-              class="btn btn-outline-primary"
-              id="speccoffee"
+            </button> -->
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
             >
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="speccoffee"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+              <p>
+                Specialty Coffee.................<span class="price"
+                  >$2.49</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="speccoffee"
+              >
+                Add
+              </button>
 
-            <p>Steep Tea............................$1.49</p>
-            <button type="button" class="btn btn-outline-primary" id="steeptea">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="steeptea"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-speccoffee"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Green Tea............................$1.79</p>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Steep Tea............................<span class="price"
+                  >$1.49</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="steeptea"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-steeptea"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+
+            <!-- <p>Green Tea............................$1.79</p>
             <button type="button" class="btn btn-outline-primary" id="greentea">
               Add
             </button>
@@ -952,195 +1295,404 @@
             />
             <button type="button" class="btn btn-outline-primary" id="minus">
               -
-            </button>
+            </button> -->
 
-            <p>Earl Gray Tea.......................$1.79</p>
-            <button type="button" class="btn btn-outline-primary" id="earlgray">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="earlgray"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Earl Gray Tea.......................<span class="price"
+                  >$1.79</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="earlgray"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-earlgray"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Specialty Tea.....................$2.29</p>
-            <button type="button" class="btn btn-outline-primary" id="spectea">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="spectea"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div class="justify-content-center input-group quantity-selector">
+              <p>
+                Specialty Tea......................<span class="price"
+                  >$2.29</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="spectea"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-spectea"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+            <hr />
+            <h5>Addons</h5>
+            <hr />
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                2% Milk...............................<span class="price"
+                  >$0.00</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="milk">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-milk"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Creamer..............................<span class="price"
+                  >$0.00</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="creamer"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-creamer"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Sugar..................................<span class="price"
+                  >$0.00</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="sugar">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-sugar"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Sweetener..........................<span class="price"
+                  >$0.00</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="sweetener"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-sweetener"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
           </div>
 
           <div
-            class="col bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
+            class="col-menu bg-white border border-black shadow p-2 mb-1 bg-body-tertiary rounded"
           >
             <h5>Thrist Quenchers</h5>
             <br />
-            <p>Water..................................$0.99</p>
-            <button type="button" class="btn btn-outline-primary" id="water">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="water"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
 
-            <p>Pepsi..................................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="pepis">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="pepis"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Water.................................<span class="price"
+                  >$0.99</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="water">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-water"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>7 UP...................................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="sevenup">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="sevenup"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Pepsi..................................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="pepis">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-pepis"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Coke...................................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="coke">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="coke"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                7 UP...................................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="sevenup"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-sevenup"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Coke Zero..........................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="cokezero">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="cokezero"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Coke..................................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="coke">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-coke"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Apple Juice........................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="apple">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="apple"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Coke Zero..........................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="cokezero"
+              >
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-cokezero"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Orange Juice......................$1.99</p>
-            <button type="button" class="btn btn-outline-primary" id="orange">
-              Add
-            </button>
-            <button type="button" class="btn btn-outline-primary" id="plus">
-              +
-            </button>
-            <input
-              type="text"
-              for="orange"
-              maxlength="3"
-              size="2"
-              value="1"
-              style="text-align: center"
-              class="quantity-input"
-            />
-            <button type="button" class="btn btn-outline-primary" id="minus">
-              -
-            </button>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Apple Juice........................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="apple">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-apple"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
 
-            <p>Gatorade............................$2.99</p>
+            <div
+              class="justify-content-center mb-1 input-group quantity-selector"
+            >
+              <p>
+                Orange Juice.....................<span class="price"
+                  >$1.99</span
+                >
+              </p>
+              <button type="button" class="btn btn-outline-primary" id="orange">
+                Add
+              </button>
+              <button type="button" class="btn btn-outline-primary plus">
+                +
+              </button>
+              <input
+                type="text"
+                maxlength="3"
+                size="2"
+                value="1"
+                style="text-align: center"
+                class="quantity-input"
+                id="qty-orange"
+              />
+              <button type="button" class="btn btn-outline-primary minus">
+                -
+              </button>
+            </div>
+
+            <!-- <p>Gatorade............................$2.99</p>
             <button type="button" class="btn btn-outline-primary" id="gatorade">
               Add
             </button>
@@ -1158,7 +1710,7 @@
             />
             <button type="button" class="btn btn-outline-primary" id="minus">
               -
-            </button>
+            </button> -->
           </div>
 
           <div
@@ -1268,7 +1820,7 @@
             // starting with an empty cart "[]"
             let cart = [];
 
-            // try catch is used for loading the selected item(s) from the locval storage and inpolemting them int othe cart
+            // try catch is used for loading the selected item(s) from the local storage and inpolemting them into the cart
             try {
               const cartData = localStorage.getItem("cart");
               cart = cartData ? JSON.parse(cartData) : [];
@@ -1283,10 +1835,12 @@
               (cartItem) => cartItem.id === itemId
             );
 
+            const quantityInput = document.querySelector(`#qty-${itemId}`);
+            const quantityToAdd = parseInt(quantityInput?.value) || 1;
             // if the item already is in existence inside the cart
             // this statement will increarse the item qty +1
             if (existingIndex > -1) {
-              cart[existingIndex].quantity += 1;
+              cart[existingIndex].quantity += quantityToAdd;
               console.log("Increased quantity");
             } else {
               // this push is only if there is no item detected
@@ -1295,7 +1849,7 @@
                 id: itemId,
                 name: item.name,
                 price: item.price,
-                quantity: 1,
+                quantity: quantityToAdd,
               });
               console.log("Added new item");
             }
@@ -1309,11 +1863,11 @@
               console.log("Saved to localStorage");
               console.log("New cart:", cart);
 
-              // set up " verify" which makes sure the data was correctkly saved
+              // set up " verify" which makes sure the data was correctly saved
               const verify = localStorage.getItem("cart");
               console.log("Verification:", verify);
 
-              //alert will display message upon saving awhen it is confirmed
+              //alert will display message upon saving when it is confirmed
               alert(item.name + " added to cart!");
 
               // confusing but this originalText will take the
