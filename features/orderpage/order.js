@@ -5,7 +5,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function loadCart() {
   // Get cart from localStorage Here
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cart = JSON.parse(localStorage.getItem("cart")) || []; // keeping this empty
+
   const cartTableBody = document.querySelector("#cartTable tbody");
 
   // Clear existing rows
