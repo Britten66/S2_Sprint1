@@ -1,8 +1,8 @@
 /* Menu page */
 
 #bg-video-menu {
-  position: absolute;
-  top: 2.7rem;
+  position: relative;
+  top: 0;
   left: 0;
   bottom: 1rem;
   width: 100%;
@@ -12,7 +12,7 @@
 }
 
 #containermenu {
-  margin-top: 12rem;
+  margin: auto;
 }
 
 h2 {
@@ -42,10 +42,55 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.row {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .menu-header {
+  position: absolute;
   color: whitesmoke;
   letter-spacing: 50px;
-  padding-top: 0;
-  font-weight: bold;
-  margin-top: 0;
+  top: 25%;
+  left: 51.5%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+@media (max-width: 750px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  /* .col-menu {
+    width: 100%;
+  }
+
+  .addons .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addons .btn {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  } */
+}
+
+@media (max-width: 500px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .col-menu {
+    width: 100%;
+  }
+
+  .addons .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addons .btn {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
 }

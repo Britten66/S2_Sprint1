@@ -11,6 +11,16 @@ Matt Reid
 
 Christopher Britten
 
+Study Group 1 Retro
+
+We had merge conflicts early on from working in the same files, which slowed progress until we defined clearer branch ownership. Time management was good and deadlines were met as the team expected
+
+Next sprint, we plan to set deadlines earlier for feature completion, hold short weekly syncs, and enforce one review before merging. We’ll also add comments and consistent file naming to keep the repo cleaner.
+
+We learned how to manage collaboration through Git more effectively and gained confidence handling front-end JavaScript logic.
+
+Our Sprint 1 restaurant website totals approximately 3,572 lines of code, including 2,371 HTML, 553 CSS, and 648 JavaScript lines developed across all project files.
+
 Overview Here
 
 This project was developed during Sprint 1 (Winter 2025) as part of the Software Development Program at Keyin College.
