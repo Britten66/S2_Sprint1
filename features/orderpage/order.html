@@ -113,16 +113,23 @@ Enjoy A No-Wait Dining Experience  </p>
 <button class="btn" onclick="clearCart()">Clear Cart</button>
 
 <div class="highlights">
+  
 <h4><strong> Top Picks: </strong></h4>
+<h4><strong>~~~~~~~~~~~~~~~~~~~~~~~~</strong></h4>
 <h5>Double Cheese Burger Deluxe</h5> <p> flame-grilled patties layered with melted cheddar, lettuce, and tomato.</p>
-<h5>Classic Chop </h5> <p> smoky, savory, and suspiciously satisfying..</p>
-<h5>Almost Enchilatas</h5> <p>they’re not quite enchiladas, but they’re close enough.</p>
+
+
+<h5>Classic Chop </h5> <p>Smoky, savory, and suspiciously satisfying. Served with roasted potatoes and seasonal greens.</p>
+<h5>Almost Enchilatas</h5>
+ <p>they’re not quite enchiladas, but they’re close enough.</p>
 </div>
+
 <div class="highlights2">
-<h4><strong>: </strong></h4>
-<h5>Double Cheese Burger Deluxe</h5> <p> flame-grilled patties layered with melted cheddar, lettuce, and tomato.</p>
-<h5>Classic Chop </h5> <p> smoky, savory, and suspiciously satisfying..</p>
-<h5>Almost Enchilatas</h5> <p>they’re not quite enchiladas, but they’re close enough.</p>
+  <h4><strong> In House Specials </strong></h4>
+<h4><strong>~~~~~~~~~~~~~~~~~~~~~~~~</strong></h4>
+<h5>BBQ Pulled Pork Sandwich</h5> <p> slow-cooked pork piled on a toasted bun with coleslaw.</p>
+<h5> Grilled Chicken </h5> <p> smoky, savory, and suspiciously satisfying..</p>
+<h5>Crispy Chicken Caesar Wrap</h5> <p>grilled chicken, romaine, and house-made dressing in a warm tortilla.</p>
 </div>
 
 
@@ -192,11 +199,13 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
   
-  let grandTotal = 0;
+  let TAXRATE = 0.15;
+  let subTotal = 0;
+
   // this loops through each item in the cart array 
   cart.forEach(item => {
     const itemTotal = item.price * item.quantity;
-    grandTotal += itemTotal;
+    subTotal += itemTotal;
     //  this created a new tale item and populate the row in the order screen
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -209,8 +218,32 @@ document.addEventListener('DOMContentLoaded', function() {
     cartTableBody.appendChild(row);
   });
   
+// calc logic here
+
+const taxAmt = subTotal * TAXRATE;
+const grandTotal = subTotal + taxAmt;
+
+const subTotalRow = document.createElement('tr');
+subTotalRow.className = 'cart';
+
+  subTotalRow.innerHTML = `
+    <td colspan="3"><strong>SubTotal</strong></td>
+    <td><strong>$${subTotal.toFixed(2)}</strong></td>
+  `;
+  cartTableBody.appendChild(subTotalRow);
+
+
+
+
+const taxRow = document.createElement('tr');
+taxRow.className = 'cart';
+taxRow.innerHTML = `<td colspan="3"><strong>Tax (${(TAXRATE * 100).toFixed(0)}%)</strong></td>
+    <td><strong>$${taxAmt.toFixed(2)}</strong></td>`;
+     cartTableBody.appendChild(taxRow);
+
+
   const totalRow = document.createElement('tr');
-  totalRow.className = 'table-success';
+  totalRow.className = 'cart';
   totalRow.innerHTML = `
     <td colspan="3"><strong>Grand Total</strong></td>
     <td><strong>$${grandTotal.toFixed(2)}</strong></td>

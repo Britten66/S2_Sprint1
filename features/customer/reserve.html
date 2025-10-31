@@ -72,9 +72,9 @@
     <!-- ============================= -->
 
     <div class="col">
-    <div class="p-4 bg-light rounded shadow-sm h-100">
-      <i class="bi bi-calendar-date fs-1  mb-3"></i>
-      <h5>Pick a Date</h5>
+    <div class="calContain">
+     
+      <h5><strong>Pick a Date</strong></h5>
 
 
 <div class="month">
@@ -122,9 +122,9 @@
 <!-- ============================= -->
 
   <div class="col">
-    <div class="p-4 bg-light rounded shadow-sm h-100">
+    <div class="guest">
       <i class="bi bi-people fs-1 mb-3"></i>
-      <h5>Select # of Guest's</h5>
+      <h5><strong> # of Guest's</strong></h5>
 
         <div class="form-group">
            <label for="guestSelect">Guests</label>
@@ -169,9 +169,9 @@
 
 
      <div class="col">
-    <div class="p-4 bg-light rounded shadow-sm h-100">
+    <div class="area">
       <i class="bi bi-geo-alt fs-1 mb-3"></i>
-      <h5>Indoor/Outdoor/Lounge</h5>
+      <h5><strong>Indoor/Outdoor/Lounge</strong></h5>
       <br>
        <div class="form-group form-check">
     <input type="radio" name="areaChoice" value="Indoor">
@@ -200,9 +200,9 @@
 
 
          <div class="col">
-    <div class="p-4 bg-light rounded shadow-sm h-100">
+    <div class="confirm">
       <i class="bi bi-check-circle fs-1 mb-3"></i>
-      <h5>Confirm & Booked </h5>
+      <h5><strong>Confirm & Booked </strong></h5>
       <br>
 
       <!-- date confirm  -->
@@ -216,35 +216,13 @@
 <br>
 
 <!-- Sbmit is here -->
- <button type="submit" class="btn btn-primary">Submit</button>
+ <button type="submit" class="btn btn-primary"onclick="alert('Your Table Is Booked!')">Submit</button>
      </div>
     </div>
   </div>
 </div>
 <br>
 
-<!-- ============================= -->
-    <!-- input sections  -->
-<!-- ============================= -->
-
-
-     <!-- <div class="input-group py-1">
-  <span class="input-group-text">Guest 1</span>
-  <input type="text" aria-label="First name" class="form-control" placeholder="first name">
-  <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
-</div>
-
-      <div class="input-group py-2">
-  <span class="input-group-text">Guest 2</span>
-  <input type="text" aria-label="First name" class="form-control" placeholder="first name">
-  <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
-</div>
-
-    <div class="input-group py-1">
-  <span class="input-group-text">Guest 3</span>
-  <input type="text" aria-label="First name" class="form-control" placeholder="first name">
-  <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
-</div> -->
 
 
  <h2>Join Our Mailing List To keep Up To Date!
@@ -256,23 +234,22 @@
 
     <input type="text" class="form-control" id="customerName" placeholder="Enter Your Name Here">
   </div>
-
 <br>
 
   <div class="form-group">
 
     <label for="customerEmail">Email</label> <!-- add validator for this -->
     
-    <input type="number" class="form-control" id="customerPhone" placeholder="Enter Your Email Here">
+    <input type="email" class="form-control" id="customerPhone" placeholder="Enter Your Email Here">
   </div>
  <br>
 
  <!-- making a note here it would be cool to link this to local storage or a data .dat file type thing-->
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" onclick="alert('Thanks For Subscribing!')">Submit</button>
 </form>
 <br> 
+<h2 class="tagging"> Coded & Styled By Study Group 1</h2>
 
-<br>
 
 
 

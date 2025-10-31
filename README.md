@@ -29,5 +29,5 @@ shared/
 ├─ Oct 20 → Repo + Branch + Skeleton + Folder Tree ready ** DONE **
 ├─ Oct 22 → HTML structure complete ** DONE **
 ├─ Oct 24 → Figma/CSS implemented ** DONE **
-├─ Oct 27 → JS validation functional -- KINDA --
-└─ Oct 30 → Final QA + submission -- NOT DONE --
+├─ Oct 27 → JS validation functional DONE
+└─ Oct 30 → Final QA + submission DONE
